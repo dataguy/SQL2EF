@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Quick and easy conversion of SQL Server table schema to Microsoft's MVC Entity Framework data model.  Create the class to represent the database table using SSMS (SQL Server Management Studio.)" />
+    <link rel="icon" type="image/x-icon" href="/assets/ico/favicon.ico" />
+    <link href="http://fonts.googleapis.com/css?family=Orbitron:400,900|Open+Sans:400,700" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="/Content/style.min.css" rel="stylesheet" type="text/css" />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/script.js/2.5.7/script.min.js'></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand"><a href="http://SQL2EF.com"><i class="fa fa-database"></i>&nbsp;SQL to Entity Framework</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        @RenderBody()
+        <footer>
+            <p>&copy; @DateTime.Now.Year SQL2EF</p>
+        </footer>
+    </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <script src='//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        document.write('<img src="http://abcstats.com/stats.asp?s=' + document.URL + '&r=' + document.referrer + ' " width="1" height="1" border="0">');
+    </script>
+</body>
+</html>
